@@ -1,13 +1,60 @@
+@font-face {
+    font-family: 'PingFangSC-Medium';
+    src: url('./assets/fonts/PingFangSC-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'PingFangSC-Semibold';
+    src: url('./assets/fonts/PingFangSC-Semibold.ttf');
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url("./assets/back.png");
+    background-size: cover;
+    user-select: none;
+    color: #ACF4FF;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 178vh;
+    height: 100vh;
+    max-height: 56vw;
+}
+
+.close{
+    cursor: pointer;
+    width: .33rem;
+    height: .33rem;
+    position: absolute;
+    right: .3rem;
+    top: .3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAd1JREFUSA291z1LAzEYB/AnOa3QFq2fw8FRlyKCKNZdv4CTsyAO4ujiLIj9BO5WBEGkk6ODk7N7LW3B0168/7Up12vSS9LoM9xL7sn9muQu6TGK4/DxpSqi6HRhfnH/anOlgzLfcfT0Vv76bt8yzi/qW2tNBpSifkMIKjOiZqGwVPONAw3Dz4YgqjJGHeJBjYuofwIULcQFJCDRV4vTaGLEFnqXL4vSAWPsWUI+8SwKA72KIY33RMcPr6UW690JITZwjpi123WoHMoEBuQTz0OHDcNuED5wExTaqMVDe6aWm6JKGIUuLbdBtbAtbotOhU1xFzQXzsNxXc5IOEaYvoYTD9eg+vhWN+bIwoQjs01R5BvBSFThKJdhg6KOMYxkHW6L4l4cG9PoFeYYCaGsUwx/4l43D+MWq57eNINWV6i0e7mz2k2X646Vvz6brEIBZVe1FnXvMRzZ+qrzXFiHYpWpiOKeCkcdFZYum9rV01D5L0X1wKE35PKXxtLHWtgElTdywZWwDeqKT8AuqAs+Bs+C2uIj2AdqgyewT9QUZ3+BmuAcnxWuS5sEdHtMn6pJJgzbdY5vmeSzIq4d93vui69DdOVZPJ7pPgLGzpIx/o+PtsEk070JiJ9fb6+//wJzRhGrUFNNcgAAAABJRU5ErkJggg==);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

@@ -1,6 +1,6 @@
 {
   "name": "lottery",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,10 +10,13 @@
     "@types/node": "^12.12.22",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
+    "lodash": "^4.17.15",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
-    "typescript": "^3.7.4"
+    "styled-components": "^4.4.1",
+    "typescript": "^3.7.4",
+    "xlsx": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/styled-components": "^4.4.1"
   }
 }
